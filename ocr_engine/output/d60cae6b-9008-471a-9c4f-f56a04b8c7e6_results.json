@@ -1,0 +1,2445 @@
+{
+  "document_id": "d60cae6b-9008-471a-9c4f-f56a04b8c7e6",
+  "status": "success",
+  "processing_metadata": {
+    "engines_used": [
+      "tesseract",
+      "easyocr",
+      "trocr"
+    ],
+    "successful_engines": [
+      "tesseract",
+      "trocr"
+    ],
+    "processing_time": 18.576777935028076,
+    "timestamp": "2025-06-14T20:02:04.532288"
+  },
+  "raw_ocr": {
+    "tesseract": {
+      "text": "A.P.S. OF WATERTOWN;LLC\n\n692 Mill St\n\nWatertown, NY 13601-1537 USA\n\n+13157272120\n\nINVOICE\n\nBILL TO INVOICE # 5799\n\nLisa Levely DATE 05/18/2025\nNorth Star Real Estate DUE DATE 06/17/2025\n1634 state st TERMS Net 30\n\nwatertown, ny 13601\n\nDATE DESCRIPTION QTY RATE AMOUNT\nreplace 1 0.00 0.00\nreplaced 4 ceiling tiles and 4 bulbs\nmaterial 1 162.00 162.00T\nceiling tiles, bulbs\nlabor 2 40.00 80.00T\nlabor\n\nfleet pride SUBTOTAL 242.00\nTAX (8%) 19.36\nTOTAL 261.36\n\nBALANCE DUE $261.36",
+      "confidence": 0.9415584415584416,
+      "words": [
+        [
+          "A.P.S.",
+          0.83,
+          [
+            251,
+            172,
+            129,
+            36
+          ]
+        ],
+        [
+          "OF",
+          0.86,
+          [
+            394,
+            172,
+            63,
+            36
+          ]
+        ],
+        [
+          "WATERTOWN;LLC",
+          0.9,
+          [
+            469,
+            172,
+            436,
+            42
+          ]
+        ],
+        [
+          "692",
+          0.96,
+          [
+            253,
+            235,
+            72,
+            35
+          ]
+        ],
+        [
+          "Mill",
+          0.96,
+          [
+            339,
+            235,
+            85,
+            34
+          ]
+        ],
+        [
+          "St",
+          0.96,
+          [
+            439,
+            235,
+            40,
+            35
+          ]
+        ],
+        [
+          "Watertown,",
+          0.96,
+          [
+            251,
+            294,
+            234,
+            40
+          ]
+        ],
+        [
+          "NY",
+          0.96,
+          [
+            499,
+            294,
+            70,
+            33
+          ]
+        ],
+        [
+          "13601-1537",
+          0.95,
+          [
+            601,
+            293,
+            233,
+            35
+          ]
+        ],
+        [
+          "USA",
+          0.95,
+          [
+            850,
+            293,
+            98,
+            35
+          ]
+        ],
+        [
+          "+13157272120",
+          0.92,
+          [
+            252,
+            350,
+            300,
+            35
+          ]
+        ],
+        [
+          "INVOICE",
+          0.96,
+          [
+            263,
+            431,
+            340,
+            57
+          ]
+        ],
+        [
+          "BILL",
+          0.93,
+          [
+            263,
+            553,
+            111,
+            35
+          ]
+        ],
+        [
+          "TO",
+          0.93,
+          [
+            386,
+            553,
+            66,
+            36
+          ]
+        ],
+        [
+          "INVOICE",
+          0.93,
+          [
+            1643,
+            553,
+            206,
+            36
+          ]
+        ],
+        [
+          "#",
+          0.93,
+          [
+            1860,
+            554,
+            26,
+            34
+          ]
+        ],
+        [
+          "5799",
+          0.96,
+          [
+            1908,
+            553,
+            96,
+            35
+          ]
+        ],
+        [
+          "Lisa",
+          0.93,
+          [
+            263,
+            617,
+            85,
+            35
+          ]
+        ],
+        [
+          "Levely",
+          0.92,
+          [
+            362,
+            617,
+            135,
+            45
+          ]
+        ],
+        [
+          "DATE",
+          0.94,
+          [
+            1753,
+            610,
+            133,
+            35
+          ]
+        ],
+        [
+          "05/18/2025",
+          0.96,
+          [
+            1906,
+            610,
+            224,
+            35
+          ]
+        ],
+        [
+          "North",
+          0.96,
+          [
+            263,
+            674,
+            115,
+            35
+          ]
+        ],
+        [
+          "Star",
+          0.96,
+          [
+            393,
+            674,
+            79,
+            35
+          ]
+        ],
+        [
+          "Real",
+          0.96,
+          [
+            485,
+            674,
+            90,
+            35
+          ]
+        ],
+        [
+          "Estate",
+          0.96,
+          [
+            589,
+            675,
+            120,
+            34
+          ]
+        ],
+        [
+          "DUE",
+          0.96,
+          [
+            1638,
+            668,
+            102,
+            36
+          ]
+        ],
+        [
+          "DATE",
+          0.96,
+          [
+            1753,
+            668,
+            133,
+            35
+          ]
+        ],
+        [
+          "06/17/2025",
+          0.96,
+          [
+            1906,
+            668,
+            224,
+            35
+          ]
+        ],
+        [
+          "1634",
+          0.96,
+          [
+            268,
+            732,
+            93,
+            35
+          ]
+        ],
+        [
+          "state",
+          0.96,
+          [
+            378,
+            737,
+            87,
+            30
+          ]
+        ],
+        [
+          "st",
+          0.96,
+          [
+            482,
+            737,
+            30,
+            30
+          ]
+        ],
+        [
+          "TERMS",
+          0.96,
+          [
+            1719,
+            725,
+            164,
+            36
+          ]
+        ],
+        [
+          "Net",
+          0.96,
+          [
+            1907,
+            726,
+            71,
+            34
+          ]
+        ],
+        [
+          "30",
+          0.96,
+          [
+            1992,
+            725,
+            46,
+            35
+          ]
+        ],
+        [
+          "watertown,",
+          0.92,
+          [
+            263,
+            794,
+            222,
+            36
+          ]
+        ],
+        [
+          "ny",
+          0.96,
+          [
+            499,
+            800,
+            47,
+            34
+          ]
+        ],
+        [
+          "13601",
+          0.96,
+          [
+            579,
+            789,
+            114,
+            35
+          ]
+        ],
+        [
+          "DATE",
+          0.97,
+          [
+            282,
+            1114,
+            120,
+            31
+          ]
+        ],
+        [
+          "DESCRIPTION",
+          0.96,
+          [
+            618,
+            1114,
+            296,
+            32
+          ]
+        ],
+        [
+          "QTY",
+          0.93,
+          [
+            1555,
+            1114,
+            92,
+            39
+          ]
+        ],
+        [
+          "RATE",
+          0.94,
+          [
+            1889,
+            1114,
+            117,
+            31
+          ]
+        ],
+        [
+          "AMOUNT",
+          0.94,
+          [
+            2068,
+            1114,
+            199,
+            32
+          ]
+        ],
+        [
+          "replace",
+          0.96,
+          [
+            617,
+            1185,
+            145,
+            47
+          ]
+        ],
+        [
+          "1",
+          0.95,
+          [
+            1628,
+            1187,
+            14,
+            33
+          ]
+        ],
+        [
+          "0.00",
+          0.93,
+          [
+            1919,
+            1186,
+            85,
+            35
+          ]
+        ],
+        [
+          "0.00",
+          0.93,
+          [
+            2181,
+            1186,
+            85,
+            35
+          ]
+        ],
+        [
+          "replaced",
+          0.95,
+          [
+            617,
+            1236,
+            169,
+            45
+          ]
+        ],
+        [
+          "4",
+          0.96,
+          [
+            793,
+            1232,
+            18,
+            54
+          ]
+        ],
+        [
+          "ceiling",
+          0.96,
+          [
+            837,
+            1236,
+            134,
+            45
+          ]
+        ],
+        [
+          "tiles",
+          0.96,
+          [
+            986,
+            1236,
+            80,
+            35
+          ]
+        ],
+        [
+          "and",
+          0.96,
+          [
+            1083,
+            1236,
+            70,
+            35
+          ]
+        ],
+        [
+          "4",
+          0.96,
+          [
+            1166,
+            1236,
+            23,
+            34
+          ]
+        ],
+        [
+          "bulbs",
+          0.95,
+          [
+            1203,
+            1236,
+            106,
+            35
+          ]
+        ],
+        [
+          "material",
+          0.96,
+          [
+            618,
+            1296,
+            163,
+            56
+          ]
+        ],
+        [
+          "1",
+          0.79,
+          [
+            1628,
+            1302,
+            14,
+            33
+          ]
+        ],
+        [
+          "162.00",
+          0.96,
+          [
+            1875,
+            1301,
+            129,
+            35
+          ]
+        ],
+        [
+          "162.00T",
+          0.91,
+          [
+            2106,
+            1301,
+            162,
+            35
+          ]
+        ],
+        [
+          "ceiling",
+          0.96,
+          [
+            618,
+            1351,
+            134,
+            45
+          ]
+        ],
+        [
+          "tiles,",
+          0.96,
+          [
+            767,
+            1351,
+            94,
+            41
+          ]
+        ],
+        [
+          "bulbs",
+          0.96,
+          [
+            874,
+            1351,
+            106,
+            35
+          ]
+        ],
+        [
+          "labor",
+          0.96,
+          [
+            618,
+            1415,
+            103,
+            37
+          ]
+        ],
+        [
+          "2",
+          0.96,
+          [
+            1624,
+            1416,
+            22,
+            34
+          ]
+        ],
+        [
+          "40.00",
+          0.95,
+          [
+            1895,
+            1416,
+            109,
+            35
+          ]
+        ],
+        [
+          "80.00T",
+          0.91,
+          [
+            2128,
+            1416,
+            140,
+            35
+          ]
+        ],
+        [
+          "labor",
+          0.96,
+          [
+            618,
+            1466,
+            102,
+            35
+          ]
+        ],
+        [
+          "fleet",
+          0.96,
+          [
+            263,
+            1618,
+            88,
+            35
+          ]
+        ],
+        [
+          "pride",
+          0.96,
+          [
+            363,
+            1618,
+            102,
+            45
+          ]
+        ],
+        [
+          "SUBTOTAL",
+          0.96,
+          [
+            1300,
+            1624,
+            259,
+            35
+          ]
+        ],
+        [
+          "242.00",
+          0.94,
+          [
+            2139,
+            1624,
+            134,
+            35
+          ]
+        ],
+        [
+          "TAX",
+          0.96,
+          [
+            1299,
+            1682,
+            101,
+            34
+          ]
+        ],
+        [
+          "(8%)",
+          0.96,
+          [
+            1416,
+            1682,
+            95,
+            43
+          ]
+        ],
+        [
+          "19.36",
+          0.92,
+          [
+            2168,
+            1682,
+            105,
+            35
+          ]
+        ],
+        [
+          "TOTAL",
+          0.95,
+          [
+            1299,
+            1739,
+            163,
+            35
+          ]
+        ],
+        [
+          "261.36",
+          0.94,
+          [
+            2139,
+            1739,
+            134,
+            35
+          ]
+        ],
+        [
+          "BALANCE",
+          0.96,
+          [
+            1299,
+            1797,
+            235,
+            35
+          ]
+        ],
+        [
+          "DUE",
+          0.96,
+          [
+            1548,
+            1798,
+            101,
+            34
+          ]
+        ],
+        [
+          "$261.36",
+          0.66,
+          [
+            2061,
+            1797,
+            213,
+            57
+          ]
+        ]
+      ],
+      "lines": [],
+      "paragraphs": [],
+      "processing_time": 2.7551960945129395,
+      "metadata": {
+        "total_words": 77,
+        "total_lines": 0,
+        "total_paragraphs": 0,
+        "language": "eng"
+      },
+      "engine_name": "tesseract",
+      "errors": []
+    },
+    "easyocr": {
+      "text": "",
+      "confidence": 0.0,
+      "words": [],
+      "lines": [],
+      "paragraphs": [],
+      "processing_time": 8.78545594215393,
+      "metadata": {},
+      "engine_name": "easyocr",
+      "errors": [
+        "not enough values to unpack (expected 3, got 2)"
+      ]
+    },
+    "trocr": {
+      "text": "",
+      "confidence": 0.0,
+      "words": [],
+      "lines": [],
+      "paragraphs": [],
+      "processing_time": 7.036125898361206,
+      "metadata": {
+        "model": "base_printed",
+        "device": "cpu",
+        "num_regions": 1,
+        "num_successful": 0
+      },
+      "engine_name": "trocr",
+      "errors": []
+    }
+  },
+  "consensus": {
+    "status": "success",
+    "consensus_text": "A.P.S. OF WATERTOWN;LLC\n\n692 Mill St\n\nWatertown, NY 13601-1537 USA\n\n+13157272120\n\nINVOICE\n\nBILL TO INVOICE # 5799\n\nLisa Levely DATE 05/18/2025\nNorth Star Real Estate DUE DATE 06/17/2025\n1634 state st TERMS Net 30\n\nwatertown, ny 13601\n\nDATE DESCRIPTION QTY RATE AMOUNT\nreplace 1 0.00 0.00\nreplaced 4 ceiling tiles and 4 bulbs\nmaterial 1 162.00 162.00T\nceiling tiles, bulbs\nlabor 2 40.00 80.00T\nlabor\n\nfleet pride SUBTOTAL 242.00\nTAX (8%) 19.36\nTOTAL 261.36\n\nBALANCE DUE $261.36",
+    "confidence": 0.9415584415584416,
+    "method": "single_engine",
+    "primary_engine": "tesseract",
+    "engine_results": {
+      "tesseract": "<src.engines.base_engine.OCRResult object at 0x12a2b7b10>"
+    },
+    "variations": {
+      "tesseract": "A.P.S. OF WATERTOWN;LLC\n\n692 Mill St\n\nWatertown, NY 13601-1537 USA\n\n+13157272120\n\nINVOICE\n\nBILL TO INVOICE # 5799\n\nLisa Levely DATE 05/18/2025\nNorth Star Real Estate DUE DATE 06/17/2025\n1634 state st TERMS Net 30\n\nwatertown, ny 13601\n\nDATE DESCRIPTION QTY RATE AMOUNT\nreplace 1 0.00 0.00\nreplaced 4 ceiling tiles and 4 bulbs\nmaterial 1 162.00 162.00T\nceiling tiles, bulbs\nlabor 2 40.00 80.00T\nlabor\n\nfleet pride SUBTOTAL 242.00\nTAX (8%) 19.36\nTOTAL 261.36\n\nBALANCE DUE $261.36"
+    },
+    "agreement_score": 1.0,
+    "words": [
+      [
+        "A.P.S.",
+        0.83,
+        [
+          251,
+          172,
+          129,
+          36
+        ]
+      ],
+      [
+        "OF",
+        0.86,
+        [
+          394,
+          172,
+          63,
+          36
+        ]
+      ],
+      [
+        "WATERTOWN;LLC",
+        0.9,
+        [
+          469,
+          172,
+          436,
+          42
+        ]
+      ],
+      [
+        "692",
+        0.96,
+        [
+          253,
+          235,
+          72,
+          35
+        ]
+      ],
+      [
+        "Mill",
+        0.96,
+        [
+          339,
+          235,
+          85,
+          34
+        ]
+      ],
+      [
+        "St",
+        0.96,
+        [
+          439,
+          235,
+          40,
+          35
+        ]
+      ],
+      [
+        "Watertown,",
+        0.96,
+        [
+          251,
+          294,
+          234,
+          40
+        ]
+      ],
+      [
+        "NY",
+        0.96,
+        [
+          499,
+          294,
+          70,
+          33
+        ]
+      ],
+      [
+        "13601-1537",
+        0.95,
+        [
+          601,
+          293,
+          233,
+          35
+        ]
+      ],
+      [
+        "USA",
+        0.95,
+        [
+          850,
+          293,
+          98,
+          35
+        ]
+      ],
+      [
+        "+13157272120",
+        0.92,
+        [
+          252,
+          350,
+          300,
+          35
+        ]
+      ],
+      [
+        "INVOICE",
+        0.96,
+        [
+          263,
+          431,
+          340,
+          57
+        ]
+      ],
+      [
+        "BILL",
+        0.93,
+        [
+          263,
+          553,
+          111,
+          35
+        ]
+      ],
+      [
+        "TO",
+        0.93,
+        [
+          386,
+          553,
+          66,
+          36
+        ]
+      ],
+      [
+        "INVOICE",
+        0.93,
+        [
+          1643,
+          553,
+          206,
+          36
+        ]
+      ],
+      [
+        "#",
+        0.93,
+        [
+          1860,
+          554,
+          26,
+          34
+        ]
+      ],
+      [
+        "5799",
+        0.96,
+        [
+          1908,
+          553,
+          96,
+          35
+        ]
+      ],
+      [
+        "Lisa",
+        0.93,
+        [
+          263,
+          617,
+          85,
+          35
+        ]
+      ],
+      [
+        "Levely",
+        0.92,
+        [
+          362,
+          617,
+          135,
+          45
+        ]
+      ],
+      [
+        "DATE",
+        0.94,
+        [
+          1753,
+          610,
+          133,
+          35
+        ]
+      ],
+      [
+        "05/18/2025",
+        0.96,
+        [
+          1906,
+          610,
+          224,
+          35
+        ]
+      ],
+      [
+        "North",
+        0.96,
+        [
+          263,
+          674,
+          115,
+          35
+        ]
+      ],
+      [
+        "Star",
+        0.96,
+        [
+          393,
+          674,
+          79,
+          35
+        ]
+      ],
+      [
+        "Real",
+        0.96,
+        [
+          485,
+          674,
+          90,
+          35
+        ]
+      ],
+      [
+        "Estate",
+        0.96,
+        [
+          589,
+          675,
+          120,
+          34
+        ]
+      ],
+      [
+        "DUE",
+        0.96,
+        [
+          1638,
+          668,
+          102,
+          36
+        ]
+      ],
+      [
+        "DATE",
+        0.96,
+        [
+          1753,
+          668,
+          133,
+          35
+        ]
+      ],
+      [
+        "06/17/2025",
+        0.96,
+        [
+          1906,
+          668,
+          224,
+          35
+        ]
+      ],
+      [
+        "1634",
+        0.96,
+        [
+          268,
+          732,
+          93,
+          35
+        ]
+      ],
+      [
+        "state",
+        0.96,
+        [
+          378,
+          737,
+          87,
+          30
+        ]
+      ],
+      [
+        "st",
+        0.96,
+        [
+          482,
+          737,
+          30,
+          30
+        ]
+      ],
+      [
+        "TERMS",
+        0.96,
+        [
+          1719,
+          725,
+          164,
+          36
+        ]
+      ],
+      [
+        "Net",
+        0.96,
+        [
+          1907,
+          726,
+          71,
+          34
+        ]
+      ],
+      [
+        "30",
+        0.96,
+        [
+          1992,
+          725,
+          46,
+          35
+        ]
+      ],
+      [
+        "watertown,",
+        0.92,
+        [
+          263,
+          794,
+          222,
+          36
+        ]
+      ],
+      [
+        "ny",
+        0.96,
+        [
+          499,
+          800,
+          47,
+          34
+        ]
+      ],
+      [
+        "13601",
+        0.96,
+        [
+          579,
+          789,
+          114,
+          35
+        ]
+      ],
+      [
+        "DATE",
+        0.97,
+        [
+          282,
+          1114,
+          120,
+          31
+        ]
+      ],
+      [
+        "DESCRIPTION",
+        0.96,
+        [
+          618,
+          1114,
+          296,
+          32
+        ]
+      ],
+      [
+        "QTY",
+        0.93,
+        [
+          1555,
+          1114,
+          92,
+          39
+        ]
+      ],
+      [
+        "RATE",
+        0.94,
+        [
+          1889,
+          1114,
+          117,
+          31
+        ]
+      ],
+      [
+        "AMOUNT",
+        0.94,
+        [
+          2068,
+          1114,
+          199,
+          32
+        ]
+      ],
+      [
+        "replace",
+        0.96,
+        [
+          617,
+          1185,
+          145,
+          47
+        ]
+      ],
+      [
+        "1",
+        0.95,
+        [
+          1628,
+          1187,
+          14,
+          33
+        ]
+      ],
+      [
+        "0.00",
+        0.93,
+        [
+          1919,
+          1186,
+          85,
+          35
+        ]
+      ],
+      [
+        "0.00",
+        0.93,
+        [
+          2181,
+          1186,
+          85,
+          35
+        ]
+      ],
+      [
+        "replaced",
+        0.95,
+        [
+          617,
+          1236,
+          169,
+          45
+        ]
+      ],
+      [
+        "4",
+        0.96,
+        [
+          793,
+          1232,
+          18,
+          54
+        ]
+      ],
+      [
+        "ceiling",
+        0.96,
+        [
+          837,
+          1236,
+          134,
+          45
+        ]
+      ],
+      [
+        "tiles",
+        0.96,
+        [
+          986,
+          1236,
+          80,
+          35
+        ]
+      ],
+      [
+        "and",
+        0.96,
+        [
+          1083,
+          1236,
+          70,
+          35
+        ]
+      ],
+      [
+        "4",
+        0.96,
+        [
+          1166,
+          1236,
+          23,
+          34
+        ]
+      ],
+      [
+        "bulbs",
+        0.95,
+        [
+          1203,
+          1236,
+          106,
+          35
+        ]
+      ],
+      [
+        "material",
+        0.96,
+        [
+          618,
+          1296,
+          163,
+          56
+        ]
+      ],
+      [
+        "1",
+        0.79,
+        [
+          1628,
+          1302,
+          14,
+          33
+        ]
+      ],
+      [
+        "162.00",
+        0.96,
+        [
+          1875,
+          1301,
+          129,
+          35
+        ]
+      ],
+      [
+        "162.00T",
+        0.91,
+        [
+          2106,
+          1301,
+          162,
+          35
+        ]
+      ],
+      [
+        "ceiling",
+        0.96,
+        [
+          618,
+          1351,
+          134,
+          45
+        ]
+      ],
+      [
+        "tiles,",
+        0.96,
+        [
+          767,
+          1351,
+          94,
+          41
+        ]
+      ],
+      [
+        "bulbs",
+        0.96,
+        [
+          874,
+          1351,
+          106,
+          35
+        ]
+      ],
+      [
+        "labor",
+        0.96,
+        [
+          618,
+          1415,
+          103,
+          37
+        ]
+      ],
+      [
+        "2",
+        0.96,
+        [
+          1624,
+          1416,
+          22,
+          34
+        ]
+      ],
+      [
+        "40.00",
+        0.95,
+        [
+          1895,
+          1416,
+          109,
+          35
+        ]
+      ],
+      [
+        "80.00T",
+        0.91,
+        [
+          2128,
+          1416,
+          140,
+          35
+        ]
+      ],
+      [
+        "labor",
+        0.96,
+        [
+          618,
+          1466,
+          102,
+          35
+        ]
+      ],
+      [
+        "fleet",
+        0.96,
+        [
+          263,
+          1618,
+          88,
+          35
+        ]
+      ],
+      [
+        "pride",
+        0.96,
+        [
+          363,
+          1618,
+          102,
+          45
+        ]
+      ],
+      [
+        "SUBTOTAL",
+        0.96,
+        [
+          1300,
+          1624,
+          259,
+          35
+        ]
+      ],
+      [
+        "242.00",
+        0.94,
+        [
+          2139,
+          1624,
+          134,
+          35
+        ]
+      ],
+      [
+        "TAX",
+        0.96,
+        [
+          1299,
+          1682,
+          101,
+          34
+        ]
+      ],
+      [
+        "(8%)",
+        0.96,
+        [
+          1416,
+          1682,
+          95,
+          43
+        ]
+      ],
+      [
+        "19.36",
+        0.92,
+        [
+          2168,
+          1682,
+          105,
+          35
+        ]
+      ],
+      [
+        "TOTAL",
+        0.95,
+        [
+          1299,
+          1739,
+          163,
+          35
+        ]
+      ],
+      [
+        "261.36",
+        0.94,
+        [
+          2139,
+          1739,
+          134,
+          35
+        ]
+      ],
+      [
+        "BALANCE",
+        0.96,
+        [
+          1299,
+          1797,
+          235,
+          35
+        ]
+      ],
+      [
+        "DUE",
+        0.96,
+        [
+          1548,
+          1798,
+          101,
+          34
+        ]
+      ],
+      [
+        "$261.36",
+        0.66,
+        [
+          2061,
+          1797,
+          213,
+          57
+        ]
+      ]
+    ],
+    "lines": [],
+    "metadata": {
+      "total_words": 77,
+      "total_lines": 0,
+      "total_paragraphs": 0,
+      "language": "eng"
+    }
+  },
+  "detected_patterns": {
+    "key_value_pairs": [],
+    "tables": [],
+    "lists": [],
+    "sections": [
+      {
+        "text": "692 Mill St",
+        "type": "numbered",
+        "line_number": 2,
+        "is_underlined": false,
+        "confidence": 0.7
+      },
+      {
+        "text": "INVOICE",
+        "type": "all_caps",
+        "line_number": 8,
+        "is_underlined": false,
+        "confidence": 0.7
+      },
+      {
+        "text": "DATE DESCRIPTION QTY RATE AMOUNT",
+        "type": "all_caps",
+        "line_number": 18,
+        "is_underlined": false,
+        "confidence": 0.7
+      },
+      {
+        "text": "labor",
+        "type": "potential_underlined",
+        "line_number": 24,
+        "is_underlined": false,
+        "confidence": 0.7
+      }
+    ],
+    "forms": [],
+    "numbers": {
+      "currencies": [
+        {
+          "type": "currency",
+          "value": "692",
+          "start": 25,
+          "end": 28,
+          "confidence": 0.9
+        },
+        {
+          "type": "currency",
+          "value": "136",
+          "start": 52,
+          "end": 55,
+          "confidence": 0.9
+        },
+        {
+          "type": "currency",
+          "value": "01",
+          "start": 55,
+          "end": 57,
+          "confidence": 0.9
+        },
+        {
+          "type": "currency",
+          "value": "153",
+          "start": 58,
+          "end": 61,
+          "confidence": 0.9
+        },
+        {
+          "type": "currency",
+          "value": "7",
+          "start": 61,
+          "end": 62,
+          "confidence": 0.9
+        },
+        {
+          "type": "currency",
+          "value": "131",
+          "start": 69,
+          "end": 72,
+          "confidence": 0.9
+        },
+        {
+          "type": "currency",
+          "value": "572",
+          "start": 72,
+          "end": 75,
+          "confidence": 0.9
+        },
+        {
+          "type": "currency",
+          "value": "721",
+          "start": 75,
+          "end": 78,
+          "confidence": 0.9
+        },
+        {
+          "type": "currency",
+          "value": "20",
+          "start": 78,
+          "end": 80,
+          "confidence": 0.9
+        },
+        {
+          "type": "currency",
+          "value": "579",
+          "start": 109,
+          "end": 112,
+          "confidence": 0.9
+        },
+        {
+          "type": "currency",
+          "value": "9",
+          "start": 112,
+          "end": 113,
+          "confidence": 0.9
+        },
+        {
+          "type": "currency",
+          "value": "05",
+          "start": 132,
+          "end": 134,
+          "confidence": 0.9
+        },
+        {
+          "type": "currency",
+          "value": "18",
+          "start": 135,
+          "end": 137,
+          "confidence": 0.9
+        },
+        {
+          "type": "currency",
+          "value": "202",
+          "start": 138,
+          "end": 141,
+          "confidence": 0.9
+        },
+        {
+          "type": "currency",
+          "value": "5",
+          "start": 141,
+          "end": 142,
+          "confidence": 0.9
+        },
+        {
+          "type": "currency",
+          "value": "06",
+          "start": 175,
+          "end": 177,
+          "confidence": 0.9
+        },
+        {
+          "type": "currency",
+          "value": "17",
+          "start": 178,
+          "end": 180,
+          "confidence": 0.9
+        },
+        {
+          "type": "currency",
+          "value": "202",
+          "start": 181,
+          "end": 184,
+          "confidence": 0.9
+        },
+        {
+          "type": "currency",
+          "value": "5",
+          "start": 184,
+          "end": 185,
+          "confidence": 0.9
+        },
+        {
+          "type": "currency",
+          "value": "163",
+          "start": 186,
+          "end": 189,
+          "confidence": 0.9
+        },
+        {
+          "type": "currency",
+          "value": "4",
+          "start": 189,
+          "end": 190,
+          "confidence": 0.9
+        },
+        {
+          "type": "currency",
+          "value": "30",
+          "start": 210,
+          "end": 212,
+          "confidence": 0.9
+        },
+        {
+          "type": "currency",
+          "value": "136",
+          "start": 228,
+          "end": 231,
+          "confidence": 0.9
+        },
+        {
+          "type": "currency",
+          "value": "01",
+          "start": 231,
+          "end": 233,
+          "confidence": 0.9
+        },
+        {
+          "type": "currency",
+          "value": "1",
+          "start": 276,
+          "end": 277,
+          "confidence": 0.9
+        },
+        {
+          "type": "currency",
+          "value": "0.00",
+          "start": 278,
+          "end": 282,
+          "confidence": 0.9
+        },
+        {
+          "type": "currency",
+          "value": "0.00",
+          "start": 283,
+          "end": 287,
+          "confidence": 0.9
+        },
+        {
+          "type": "currency",
+          "value": "4",
+          "start": 297,
+          "end": 298,
+          "confidence": 0.9
+        },
+        {
+          "type": "currency",
+          "value": "4",
+          "start": 317,
+          "end": 318,
+          "confidence": 0.9
+        },
+        {
+          "type": "currency",
+          "value": "1",
+          "start": 334,
+          "end": 335,
+          "confidence": 0.9
+        },
+        {
+          "type": "currency",
+          "value": "162.00",
+          "start": 336,
+          "end": 342,
+          "confidence": 0.9
+        },
+        {
+          "type": "currency",
+          "value": "162.00",
+          "start": 343,
+          "end": 349,
+          "confidence": 0.9
+        },
+        {
+          "type": "currency",
+          "value": "2",
+          "start": 378,
+          "end": 379,
+          "confidence": 0.9
+        },
+        {
+          "type": "currency",
+          "value": "40.00",
+          "start": 380,
+          "end": 385,
+          "confidence": 0.9
+        },
+        {
+          "type": "currency",
+          "value": "80.00",
+          "start": 386,
+          "end": 391,
+          "confidence": 0.9
+        },
+        {
+          "type": "currency",
+          "value": "242.00",
+          "start": 421,
+          "end": 427,
+          "confidence": 0.9
+        },
+        {
+          "type": "currency",
+          "value": "8",
+          "start": 433,
+          "end": 434,
+          "confidence": 0.9
+        },
+        {
+          "type": "currency",
+          "value": "19.36",
+          "start": 437,
+          "end": 442,
+          "confidence": 0.9
+        },
+        {
+          "type": "currency",
+          "value": "261.36",
+          "start": 449,
+          "end": 455,
+          "confidence": 0.9
+        },
+        {
+          "type": "currency",
+          "value": "$261.36",
+          "start": 469,
+          "end": 476,
+          "confidence": 0.9
+        }
+      ],
+      "percentages": [
+        {
+          "type": "percentage",
+          "value": "8%",
+          "start": 433,
+          "end": 435,
+          "confidence": 0.9
+        }
+      ],
+      "phone_numbers": [
+        {
+          "type": "phone_us",
+          "value": "+13157272120",
+          "start": 68,
+          "end": 80,
+          "confidence": 0.9
+        },
+        {
+          "type": "phone_intl",
+          "value": "+13157272120",
+          "start": 68,
+          "end": 80,
+          "confidence": 0.9
+        }
+      ],
+      "ssn": [
+        {
+          "type": "ssn",
+          "value": "131572721",
+          "start": 69,
+          "end": 78,
+          "confidence": 0.9
+        }
+      ],
+      "account_numbers": [],
+      "reference_numbers": [],
+      "form_numbers": [],
+      "other": [
+        {
+          "type": "integer",
+          "value": "692",
+          "start": 25,
+          "end": 28,
+          "confidence": 0.9
+        },
+        {
+          "type": "integer",
+          "value": "13601",
+          "start": 52,
+          "end": 57,
+          "confidence": 0.9
+        },
+        {
+          "type": "integer",
+          "value": "1537",
+          "start": 58,
+          "end": 62,
+          "confidence": 0.9
+        },
+        {
+          "type": "integer",
+          "value": "13157272120",
+          "start": 69,
+          "end": 80,
+          "confidence": 0.9
+        },
+        {
+          "type": "integer",
+          "value": "5799",
+          "start": 109,
+          "end": 113,
+          "confidence": 0.9
+        },
+        {
+          "type": "integer",
+          "value": "05",
+          "start": 132,
+          "end": 134,
+          "confidence": 0.9
+        },
+        {
+          "type": "integer",
+          "value": "18",
+          "start": 135,
+          "end": 137,
+          "confidence": 0.9
+        },
+        {
+          "type": "integer",
+          "value": "2025",
+          "start": 138,
+          "end": 142,
+          "confidence": 0.9
+        },
+        {
+          "type": "integer",
+          "value": "06",
+          "start": 175,
+          "end": 177,
+          "confidence": 0.9
+        },
+        {
+          "type": "integer",
+          "value": "17",
+          "start": 178,
+          "end": 180,
+          "confidence": 0.9
+        },
+        {
+          "type": "integer",
+          "value": "2025",
+          "start": 181,
+          "end": 185,
+          "confidence": 0.9
+        },
+        {
+          "type": "integer",
+          "value": "1634",
+          "start": 186,
+          "end": 190,
+          "confidence": 0.9
+        },
+        {
+          "type": "integer",
+          "value": "30",
+          "start": 210,
+          "end": 212,
+          "confidence": 0.9
+        },
+        {
+          "type": "integer",
+          "value": "13601",
+          "start": 228,
+          "end": 233,
+          "confidence": 0.9
+        },
+        {
+          "type": "integer",
+          "value": "1",
+          "start": 276,
+          "end": 277,
+          "confidence": 0.9
+        },
+        {
+          "type": "integer",
+          "value": "0",
+          "start": 278,
+          "end": 279,
+          "confidence": 0.9
+        },
+        {
+          "type": "integer",
+          "value": "00",
+          "start": 280,
+          "end": 282,
+          "confidence": 0.9
+        },
+        {
+          "type": "integer",
+          "value": "0",
+          "start": 283,
+          "end": 284,
+          "confidence": 0.9
+        },
+        {
+          "type": "integer",
+          "value": "00",
+          "start": 285,
+          "end": 287,
+          "confidence": 0.9
+        },
+        {
+          "type": "integer",
+          "value": "4",
+          "start": 297,
+          "end": 298,
+          "confidence": 0.9
+        },
+        {
+          "type": "integer",
+          "value": "4",
+          "start": 317,
+          "end": 318,
+          "confidence": 0.9
+        },
+        {
+          "type": "integer",
+          "value": "1",
+          "start": 334,
+          "end": 335,
+          "confidence": 0.9
+        },
+        {
+          "type": "integer",
+          "value": "162",
+          "start": 336,
+          "end": 339,
+          "confidence": 0.9
+        },
+        {
+          "type": "integer",
+          "value": "00",
+          "start": 340,
+          "end": 342,
+          "confidence": 0.9
+        },
+        {
+          "type": "integer",
+          "value": "162",
+          "start": 343,
+          "end": 346,
+          "confidence": 0.9
+        },
+        {
+          "type": "integer",
+          "value": "2",
+          "start": 378,
+          "end": 379,
+          "confidence": 0.9
+        },
+        {
+          "type": "integer",
+          "value": "40",
+          "start": 380,
+          "end": 382,
+          "confidence": 0.9
+        },
+        {
+          "type": "integer",
+          "value": "00",
+          "start": 383,
+          "end": 385,
+          "confidence": 0.9
+        },
+        {
+          "type": "integer",
+          "value": "80",
+          "start": 386,
+          "end": 388,
+          "confidence": 0.9
+        },
+        {
+          "type": "integer",
+          "value": "242",
+          "start": 421,
+          "end": 424,
+          "confidence": 0.9
+        },
+        {
+          "type": "integer",
+          "value": "00",
+          "start": 425,
+          "end": 427,
+          "confidence": 0.9
+        },
+        {
+          "type": "integer",
+          "value": "8",
+          "start": 433,
+          "end": 434,
+          "confidence": 0.9
+        },
+        {
+          "type": "integer",
+          "value": "19",
+          "start": 437,
+          "end": 439,
+          "confidence": 0.9
+        },
+        {
+          "type": "integer",
+          "value": "36",
+          "start": 440,
+          "end": 442,
+          "confidence": 0.9
+        },
+        {
+          "type": "integer",
+          "value": "261",
+          "start": 449,
+          "end": 452,
+          "confidence": 0.9
+        },
+        {
+          "type": "integer",
+          "value": "36",
+          "start": 453,
+          "end": 455,
+          "confidence": 0.9
+        },
+        {
+          "type": "integer",
+          "value": "261",
+          "start": 470,
+          "end": 473,
+          "confidence": 0.9
+        },
+        {
+          "type": "integer",
+          "value": "36",
+          "start": 474,
+          "end": 476,
+          "confidence": 0.9
+        },
+        {
+          "type": "decimal",
+          "value": "0.00",
+          "start": 278,
+          "end": 282,
+          "confidence": 0.9
+        },
+        {
+          "type": "decimal",
+          "value": "0.00",
+          "start": 283,
+          "end": 287,
+          "confidence": 0.9
+        },
+        {
+          "type": "decimal",
+          "value": "162.00",
+          "start": 336,
+          "end": 342,
+          "confidence": 0.9
+        },
+        {
+          "type": "decimal",
+          "value": "40.00",
+          "start": 380,
+          "end": 385,
+          "confidence": 0.9
+        },
+        {
+          "type": "decimal",
+          "value": "242.00",
+          "start": 421,
+          "end": 427,
+          "confidence": 0.9
+        },
+        {
+          "type": "decimal",
+          "value": "19.36",
+          "start": 437,
+          "end": 442,
+          "confidence": 0.9
+        },
+        {
+          "type": "decimal",
+          "value": "261.36",
+          "start": 449,
+          "end": 455,
+          "confidence": 0.9
+        },
+        {
+          "type": "decimal",
+          "value": "261.36",
+          "start": 470,
+          "end": 476,
+          "confidence": 0.9
+        }
+      ]
+    },
+    "dates": [
+      {
+        "type": "date_mdy",
+        "value": "05/18/2025",
+        "start": 132,
+        "end": 142,
+        "confidence": 0.9,
+        "format": "date_mdy"
+      },
+      {
+        "type": "date_mdy",
+        "value": "06/17/2025",
+        "start": 175,
+        "end": 185,
+        "confidence": 0.9,
+        "format": "date_mdy"
+      },
+      {
+        "type": "date_dmy",
+        "value": "05/18/2025",
+        "start": 132,
+        "end": 142,
+        "confidence": 0.9,
+        "format": "date_dmy"
+      },
+      {
+        "type": "date_dmy",
+        "value": "06/17/2025",
+        "start": 175,
+        "end": 185,
+        "confidence": 0.9,
+        "format": "date_dmy"
+      }
+    ],
+    "addresses": [
+      {
+        "type": "us_address",
+        "value": "692 Mill St\n\nWatertown, NY 13601-1537",
+        "start": 25,
+        "end": 62,
+        "confidence": 0.7
+      },
+      {
+        "type": "us_address",
+        "value": "1634 state st TERMS Net",
+        "start": 186,
+        "end": 210,
+        "confidence": 0.7
+      },
+      {
+        "type": "us_address",
+        "value": "13601\n\nDATE DESCRIPTION QTY RATE AMOUNT\nreplace",
+        "start": 228,
+        "end": 276,
+        "confidence": 0.7
+      }
+    ],
+    "metadata": {
+      "total_patterns": 101,
+      "pattern_density": {
+        "key_value_pairs": 0,
+        "tables": 0,
+        "lists": 0,
+        "sections": 4,
+        "forms": 0,
+        "numbers": 90,
+        "dates": 4,
+        "addresses": 3,
+        "metadata": 0
+      },
+      "dominant_patterns": [
+        "numbers",
+        "sections",
+        "dates"
+      ],
+      "text_characteristics": {
+        "total_words": 77,
+        "total_lines": 31,
+        "avg_word_length": 5.064935064935065,
+        "numeric_ratio": 0.3246753246753247
+      }
+    }
+  },
+  "document_classification": {
+    "discovered_types": {},
+    "learned_types": {},
+    "auto_generated_labels": [
+      "billing_document_2025"
+    ],
+    "best_overall_guess": "unknown_document",
+    "confidence_reasoning": [
+      "Contains 4 sections",
+      "Contains 4 dates",
+      "Contains 3 addresses"
+    ]
+  },
+  "structured_data": {
+    "fields": {},
+    "tables": [],
+    "sections": [],
+    "key_value_pairs": [],
+    "forms": [],
+    "confidence_scores": {}
+  },
+  "confidence_metrics": {
+    "engine_confidence": 0.0,
+    "overall_confidence": 0.0
+  },
+  "extraction_metadata": {
+    "extraction_strategy": "unknown",
+    "pattern_confidence": {
+      "sections": 0.7,
+      "dates": 0.9,
+      "addresses": 0.6999999999999998
+    },
+    "classification_confidence": "unknown_document",
+    "data_completeness": {
+      "has_key_values": false,
+      "has_tables": false,
+      "has_forms": false,
+      "has_structured_data": false,
+      "completeness_score": 0.25
+    },
+    "quality_indicators": [
+      "high_engine_agreement",
+      "low_confidence"
+    ]
+  },
+  "feedback_context": {
+    "document_id": "d60cae6b-9008-471a-9c4f-f56a04b8c7e6",
+    "feedback_ready": true,
+    "correction_suggestions": [],
+    "validation_prompts": [],
+    "classification_alternatives": {},
+    "field_validation_needed": []
+  },
+  "learning_opportunities": []
+}

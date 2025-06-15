@@ -1,0 +1,9 @@
+{
+  "image_quality": {},
+  "layout_analysis": {},
+  "bbox_validation": {},
+  "text_line_validation": {},
+  "consensus_enhancement": {},
+  "visual_confidence_scores": {},
+  "cross_engine_validation": {}
+}

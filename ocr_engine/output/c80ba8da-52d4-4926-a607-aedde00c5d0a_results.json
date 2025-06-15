@@ -1,0 +1,156 @@
+{
+  "document_id": "c80ba8da-52d4-4926-a607-aedde00c5d0a",
+  "status": "success",
+  "processing_metadata": {
+    "engines_used": [
+      "tesseract",
+      "easyocr",
+      "trocr"
+    ],
+    "successful_engines": [],
+    "processing_time": 105.65635275840759,
+    "timestamp": "2025-06-14T20:00:08.302606"
+  },
+  "raw_ocr": {
+    "tesseract": {
+      "text": "",
+      "confidence": 0.0,
+      "words": [],
+      "lines": [],
+      "paragraphs": [],
+      "processing_time": 0.07948875427246094,
+      "metadata": {},
+      "engine_name": "tesseract",
+      "errors": [
+        "cannot identify image file 'samples/sample_document.pdf'"
+      ]
+    },
+    "easyocr": {
+      "text": "",
+      "confidence": 0.0,
+      "words": [],
+      "lines": [],
+      "paragraphs": [],
+      "processing_time": 2.553945779800415,
+      "metadata": {},
+      "engine_name": "easyocr",
+      "errors": [
+        "Could not find a backend to open `samples/sample_document.pdf`` with iomode `r`."
+      ]
+    },
+    "trocr": {
+      "text": "",
+      "confidence": 0.0,
+      "words": [],
+      "lines": [],
+      "paragraphs": [],
+      "processing_time": 103.02291822433472,
+      "metadata": {},
+      "engine_name": "trocr",
+      "errors": [
+        "cannot identify image file 'samples/sample_document.pdf'"
+      ]
+    }
+  },
+  "consensus": {
+    "status": "no_valid_results",
+    "consensus_text": "",
+    "confidence": 0.0,
+    "method": "none",
+    "engine_results": {},
+    "variations": {},
+    "agreement_score": 0.0
+  },
+  "detected_patterns": {
+    "key_value_pairs": [],
+    "tables": [],
+    "lists": [],
+    "sections": [],
+    "forms": [],
+    "numbers": {
+      "currencies": [],
+      "percentages": [],
+      "phone_numbers": [],
+      "ssn": [],
+      "account_numbers": [],
+      "reference_numbers": [],
+      "form_numbers": [],
+      "other": []
+    },
+    "dates": [],
+    "addresses": [],
+    "metadata": {
+      "total_patterns": 0,
+      "pattern_density": {
+        "key_value_pairs": 0,
+        "tables": 0,
+        "lists": 0,
+        "sections": 0,
+        "forms": 0,
+        "numbers": 0,
+        "dates": 0,
+        "addresses": 0,
+        "metadata": 0
+      },
+      "dominant_patterns": [
+        "key_value_pairs",
+        "tables",
+        "lists"
+      ],
+      "text_characteristics": {
+        "total_words": 0,
+        "total_lines": 1,
+        "avg_word_length": 0,
+        "numeric_ratio": 0
+      }
+    }
+  },
+  "document_classification": {
+    "discovered_types": {},
+    "learned_types": {},
+    "auto_generated_labels": [],
+    "best_overall_guess": "unknown_document",
+    "confidence_reasoning": []
+  },
+  "structured_data": {
+    "fields": {},
+    "tables": [],
+    "sections": [],
+    "key_value_pairs": [],
+    "forms": [],
+    "confidence_scores": {}
+  },
+  "confidence_metrics": {
+    "engine_confidence": 0.0,
+    "overall_confidence": 0.0
+  },
+  "extraction_metadata": {
+    "extraction_strategy": "unknown",
+    "pattern_confidence": {},
+    "classification_confidence": "unknown_document",
+    "data_completeness": {
+      "has_key_values": false,
+      "has_tables": false,
+      "has_forms": false,
+      "has_structured_data": false,
+      "completeness_score": 0.0
+    },
+    "quality_indicators": [
+      "low_engine_agreement",
+      "sparse_structure",
+      "low_confidence"
+    ]
+  },
+  "feedback_context": {
+    "document_id": "c80ba8da-52d4-4926-a607-aedde00c5d0a",
+    "feedback_ready": true,
+    "correction_suggestions": [],
+    "validation_prompts": [],
+    "classification_alternatives": {},
+    "field_validation_needed": []
+  },
+  "learning_opportunities": [
+    "sparse_pattern_detection",
+    "high_engine_disagreement"
+  ]
+}

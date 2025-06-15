@@ -2,6 +2,26 @@
 
 A hybrid OCR system that combines multiple OCR engines with computer vision for maximum accuracy.
 
+## Installation
+
+### Automatic Installation (Recommended)
+```bash
+# Install all dependencies system-wide
+./install.sh
+```
+
+### Manual Installation
+```bash
+# Install system dependencies (macOS)
+brew install tesseract tesseract-lang poppler libmagic
+
+# Install system dependencies (Ubuntu/Debian)
+sudo apt-get install tesseract-ocr tesseract-ocr-all poppler-utils libmagic1
+
+# Install Python packages
+pip install -r requirements.txt
+```
+
 ## Quick Start
 
 ```bash

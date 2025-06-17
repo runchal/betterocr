@@ -1,9 +1,815 @@
 {
-  "image_quality": {},
-  "layout_analysis": {},
-  "bbox_validation": {},
-  "text_line_validation": {},
-  "consensus_enhancement": {},
-  "visual_confidence_scores": {},
-  "cross_engine_validation": {}
+  "image_quality": {
+    "overall_quality": 0.7758965656170161,
+    "blur_metrics": {
+      "laplacian_variance": 608.5188560903149,
+      "is_blurry_laplacian": "False",
+      "sobel_variance": 9505.414018849315,
+      "fft_high_freq_energy": 13.658878176901826,
+      "tenengrad_focus": 12.458099792181423,
+      "blur_score": 1.0
+    },
+    "noise_metrics": {
+      "median_filter_noise": 8.468637439100078,
+      "local_std_noise": 1.1163497943158642,
+      "wavelet_noise": 8.468637439100078,
+      "estimated_snr": 29.501704931193146,
+      "noise_score": 0.8306272512179984,
+      "is_noisy": "False"
+    },
+    "contrast_metrics": {
+      "std_deviation": 25.72216036572021,
+      "dynamic_range": "255",
+      "rms_contrast": 25.72216036572021,
+      "michelson_contrast": 1.0,
+      "weber_contrast": -0.013493243391236524,
+      "average_local_contrast": 1.6027753107546627,
+      "histogram_entropy": "0.3386916",
+      "contrast_score": 0.4019087557143783,
+      "is_low_contrast": "True"
+    },
+    "resolution_metrics": {
+      "width_pixels": 2550,
+      "height_pixels": 3300,
+      "total_pixels": 8415000,
+      "aspect_ratio": 0.7727272727272727,
+      "estimated_dpi": 300.0,
+      "adequate_for_ocr": "True",
+      "quality_category": "high",
+      "resolution_score": 1.0
+    },
+    "skew_metrics": {
+      "hough_skew_angle": "0.0",
+      "projection_skew_angle": -5.0,
+      "estimated_skew": -2.5,
+      "is_skewed": "True",
+      "skew_score": 0.75
+    },
+    "text_quality_metrics": {
+      "detected_text_lines": 1,
+      "average_char_height": 3300.0,
+      "char_height_std": 0.0,
+      "text_density": 0.012557456922162804,
+      "text_edge_density": 0.23857065798563465,
+      "text_quality_score": 0.543893642305407
+    },
+    "recommendations": [
+      "Low contrast detected. Consider histogram equalization or gamma correction.",
+      "Document skew detected (-2.5\u00b0). Consider deskewing preprocessing."
+    ],
+    "optimization_suggestions": {
+      "preprocessing_steps": [
+        "contrast_enhancement",
+        "deskewing"
+      ],
+      "ocr_parameters": {
+        "use_aggressive_settings": true
+      },
+      "engine_preferences": [
+        "trocr",
+        "surya",
+        "tesseract",
+        "easyocr"
+      ]
+    }
+  },
+  "layout_analysis": {
+    "text_regions": [
+      {
+        "bbox": [
+          0,
+          0,
+          2550,
+          3300
+        ],
+        "area": 8415000,
+        "aspect_ratio": 0.7727272727272727,
+        "type": "text"
+      }
+    ],
+    "columns": [],
+    "tables": [
+      {
+        "bbox": [
+          0,
+          0,
+          2550,
+          3300
+        ],
+        "type": "table",
+        "confidence": 1.0
+      }
+    ],
+    "figures": [
+      {
+        "bbox": [
+          2194,
+          1796,
+          85,
+          57
+        ],
+        "type": "figure",
+        "compactness": 0.72765737874097
+      },
+      {
+        "bbox": [
+          2056,
+          1793,
+          134,
+          65
+        ],
+        "type": "figure",
+        "compactness": 0.7749712973593571
+      },
+      {
+        "bbox": [
+          1412,
+          1678,
+          104,
+          51
+        ],
+        "type": "figure",
+        "compactness": 0.7620663650075414
+      },
+      {
+        "bbox": [
+          359,
+          1614,
+          110,
+          54
+        ],
+        "type": "figure",
+        "compactness": 0.6396464646464647
+      },
+      {
+        "bbox": [
+          614,
+          1347,
+          142,
+          53
+        ],
+        "type": "figure",
+        "compactness": 0.6656922668083975
+      },
+      {
+        "bbox": [
+          833,
+          1232,
+          142,
+          53
+        ],
+        "type": "figure",
+        "compactness": 0.665426521392506
+      },
+      {
+        "bbox": [
+          613,
+          1232,
+          177,
+          54
+        ],
+        "type": "figure",
+        "compactness": 0.6161330822347771
+      },
+      {
+        "bbox": [
+          612,
+          1181,
+          154,
+          55
+        ],
+        "type": "figure",
+        "compactness": 0.6213695395513578
+      },
+      {
+        "bbox": [
+          357,
+          613,
+          144,
+          53
+        ],
+        "type": "figure",
+        "compactness": 0.5883123689727463
+      },
+      {
+        "bbox": [
+          259,
+          426,
+          349,
+          67
+        ],
+        "type": "figure",
+        "compactness": 0.7760124877047427
+      },
+      {
+        "bbox": [
+          513,
+          167,
+          396,
+          51
+        ],
+        "type": "figure",
+        "compactness": 0.7426470588235294
+      }
+    ],
+    "reading_order": [
+      0
+    ],
+    "layout_confidence": 0.0,
+    "document_type": "report_or_presentation",
+    "confidence": 0.9
+  },
+  "bbox_validation": {
+    "engine_scores": {
+      "tesseract": {
+        "overlap_score": 0.33870123844970057,
+        "precision": 0.15584415584415584,
+        "recall": 0.027149321266968326,
+        "f1_score": 0.046242774566473986,
+        "bbox_quality": 0.9473823011601737,
+        "detailed_scores": [
+          {
+            "text": "A.P.S.",
+            "confidence": 0.81,
+            "overlap": 0.27906976744186046,
+            "quality": 0.9114987080103358,
+            "combined_score": 0.468798449612403
+          },
+          {
+            "text": "OF",
+            "confidence": 0.9,
+            "overlap": 0.5384615384615384,
+            "quality": 0.9583333333333333,
+            "combined_score": 0.6644230769230768
+          },
+          {
+            "text": "WATERTOWN;LLC",
+            "confidence": 0.9,
+            "overlap": 0.1834862385321101,
+            "quality": 0.6600553267865276,
+            "combined_score": 0.32645696500843535
+          },
+          {
+            "text": "692",
+            "confidence": 0.95,
+            "overlap": 0.3103174603174603,
+            "quality": 0.9975198412698413,
+            "combined_score": 0.5164781746031746
+          },
+          {
+            "text": "Mill",
+            "confidence": 0.96,
+            "overlap": 0.5,
+            "quality": 0.9615051903114187,
+            "combined_score": 0.6384515570934255
+          },
+          {
+            "text": "St",
+            "confidence": 0.96,
+            "overlap": 0.575,
+            "quality": 1.0,
+            "combined_score": 0.7024999999999999
+          },
+          {
+            "text": "Watertown,",
+            "confidence": 0.95,
+            "overlap": 0.16987349845859467,
+            "quality": 0.9155982905982906,
+            "combined_score": 0.39359093610050344
+          },
+          {
+            "text": "NY",
+            "confidence": 0.96,
+            "overlap": 0.4782608695652174,
+            "quality": 0.9431818181818181,
+            "combined_score": 0.6177371541501976
+          },
+          {
+            "text": "13601-1537",
+            "confidence": 0.95,
+            "overlap": 0.10300429184549356,
+            "quality": 0.9365419987737584,
+            "combined_score": 0.353065603923973
+          },
+          {
+            "text": "USA",
+            "confidence": 0.96,
+            "overlap": 0.35353535353535354,
+            "quality": 0.9573615160349854,
+            "combined_score": 0.534683202285243
+          },
+          {
+            "text": "+13157272120",
+            "confidence": 0.92,
+            "overlap": 0.07641196013289037,
+            "quality": 0.9228571428571428,
+            "combined_score": 0.3303455149501661
+          },
+          {
+            "text": "INVOICE",
+            "confidence": 0.96,
+            "overlap": 0.17058823529411765,
+            "quality": 0.7614164086687306,
+            "combined_score": 0.3478366873065015
+          },
+          {
+            "text": "BILL",
+            "confidence": 0.93,
+            "overlap": 0.44144144144144143,
+            "quality": 0.9211711711711712,
+            "combined_score": 0.5853603603603603
+          },
+          {
+            "text": "TO",
+            "confidence": 0.93,
+            "overlap": 0.5226047283284944,
+            "quality": 0.9446548821548821,
+            "combined_score": 0.6492197744764107
+          },
+          {
+            "text": "INVOICE",
+            "confidence": 0.92,
+            "overlap": 0.4320388349514563,
+            "quality": 0.9579962243797195,
+            "combined_score": 0.5898260517799352
+          },
+          {
+            "text": "#",
+            "confidence": 0.92,
+            "overlap": 0.9354497354497354,
+            "quality": 0.9833144796380091,
+            "combined_score": 0.9498091587062174
+          },
+          {
+            "text": "5799",
+            "confidence": 0.96,
+            "overlap": 0.22916666666666666,
+            "quality": 0.9706101190476191,
+            "combined_score": 0.4515997023809524
+          },
+          {
+            "text": "Lisa",
+            "confidence": 0.93,
+            "overlap": 0.327683615819209,
+            "quality": 0.9575630252100841,
+            "combined_score": 0.5166474386364714
+          },
+          {
+            "text": "Levely",
+            "confidence": 0.92,
+            "overlap": 0.1614012113275495,
+            "quality": 0.9008230452674897,
+            "combined_score": 0.38322776150953153
+          },
+          {
+            "text": "DATE",
+            "confidence": 0.95,
+            "overlap": 0.4565537555228277,
+            "quality": 0.9328678839957035,
+            "combined_score": 0.5994479940646904
+          },
+          {
+            "text": "05/18/2025",
+            "confidence": 0.96,
+            "overlap": 0.10714285714285714,
+            "quality": 0.9735331632653061,
+            "combined_score": 0.3670599489795918
+          },
+          {
+            "text": "North",
+            "confidence": 0.96,
+            "overlap": 0.3017241379310345,
+            "quality": 0.9779503105590062,
+            "combined_score": 0.504591989719426
+          },
+          {
+            "text": "Star",
+            "confidence": 0.95,
+            "overlap": 0.2911392405063291,
+            "quality": 0.9828209764918626,
+            "combined_score": 0.4986437613019891
+          },
+          {
+            "text": "Real",
+            "confidence": 0.96,
+            "overlap": 0.3417085427135678,
+            "quality": 0.9908730158730159,
+            "combined_score": 0.5364578846614022
+          },
+          {
+            "text": "Estate",
+            "confidence": 0.96,
+            "overlap": 0.23099203475742217,
+            "quality": 0.9868259803921569,
+            "combined_score": 0.4577422184478426
+          },
+          {
+            "text": "DUE",
+            "confidence": 0.95,
+            "overlap": 0.6504854368932039,
+            "quality": 0.9688861655773421,
+            "combined_score": 0.7460056554984453
+          },
+          {
+            "text": "DATE",
+            "confidence": 0.95,
+            "overlap": 0.4626865671641791,
+            "quality": 0.9355531686358753,
+            "combined_score": 0.6045465476056879
+          },
+          {
+            "text": "06/17/2025",
+            "confidence": 0.95,
+            "overlap": 0.10714285714285714,
+            "quality": 0.9633290816326531,
+            "combined_score": 0.3639987244897959
+          },
+          {
+            "text": "1634",
+            "confidence": 0.96,
+            "overlap": 0.25069124423963135,
+            "quality": 0.9646697388632872,
+            "combined_score": 0.4648847926267281
+          },
+          {
+            "text": "state",
+            "confidence": 0.96,
+            "overlap": 0.210727969348659,
+            "quality": 1.0,
+            "combined_score": 0.44750957854406126
+          },
+          {
+            "text": "st",
+            "confidence": 0.96,
+            "overlap": 0.4666666666666667,
+            "quality": 1.0,
+            "combined_score": 0.6266666666666667
+          },
+          {
+            "text": "TERMS",
+            "confidence": 0.96,
+            "overlap": 0.47560975609756095,
+            "quality": 0.9761178861788617,
+            "combined_score": 0.6257621951219512
+          },
+          {
+            "text": "Net",
+            "confidence": 0.96,
+            "overlap": 0.47906602254428343,
+            "quality": 0.9866404308202155,
+            "combined_score": 0.631338345027063
+          },
+          {
+            "text": "30",
+            "confidence": 0.96,
+            "overlap": 0.48936170212765956,
+            "quality": 0.9976708074534162,
+            "combined_score": 0.6418544337253865
+          },
+          {
+            "text": "watertown,",
+            "confidence": 0.91,
+            "overlap": 0.11636636636636637,
+            "quality": 0.93628003003003,
+            "combined_score": 0.36234046546546544
+          },
+          {
+            "text": "ny",
+            "confidence": 0.96,
+            "overlap": 0.4791666666666667,
+            "quality": 0.9604192740926158,
+            "combined_score": 0.6235424488944514
+          },
+          {
+            "text": "13601",
+            "confidence": 0.96,
+            "overlap": 0.21052631578947367,
+            "quality": 0.9667919799498746,
+            "combined_score": 0.4374060150375939
+          },
+          {
+            "text": "DATE",
+            "confidence": 0.96,
+            "overlap": 0.275,
+            "quality": 0.9213645523261155,
+            "combined_score": 0.46890936569783465
+          },
+          {
+            "text": "DESCRIPTION",
+            "confidence": 0.96,
+            "overlap": 0.21927787162162163,
+            "quality": 0.962577763393686,
+            "combined_score": 0.44226783915324086
+          },
+          {
+            "text": "QTY",
+            "confidence": 0.92,
+            "overlap": 0.33407018513401493,
+            "quality": 0.8811951980834468,
+            "combined_score": 0.4982076890188445
+          },
+          {
+            "text": "RATE",
+            "confidence": 0.94,
+            "overlap": 0.5254237288135594,
+            "quality": 0.9309688817189614,
+            "combined_score": 0.6470872746851799
+          },
+          {
+            "text": "AMOUNT",
+            "confidence": 0.94,
+            "overlap": 0.46733668341708545,
+            "quality": 0.9383564282594494,
+            "combined_score": 0.6086426068697945
+          },
+          {
+            "text": "replace",
+            "confidence": 0.96,
+            "overlap": 0.1640498899486427,
+            "quality": 0.917094644167278,
+            "combined_score": 0.3899633162142333
+          },
+          {
+            "text": "1",
+            "confidence": 0.96,
+            "overlap": 0.9058823529411765,
+            "quality": 0.9718614718614719,
+            "combined_score": 0.925676088617265
+          },
+          {
+            "text": "0.00",
+            "confidence": 0.93,
+            "overlap": 0.2823529411764706,
+            "quality": 0.9789915966386554,
+            "combined_score": 0.491344537815126
+          },
+          {
+            "text": "0.00",
+            "confidence": 0.93,
+            "overlap": 0.2823529411764706,
+            "quality": 0.9789915966386554,
+            "combined_score": 0.491344537815126
+          },
+          {
+            "text": "replaced",
+            "confidence": 0.96,
+            "overlap": 0.11045364891518737,
+            "quality": 0.923405654174885,
+            "combined_score": 0.3543392504930966
+          },
+          {
+            "text": "4",
+            "confidence": 0.96,
+            "overlap": 0.2956521739130435,
+            "quality": 0.8034342922534172,
+            "combined_score": 0.44798680941515556
+          },
+          {
+            "text": "ceiling",
+            "confidence": 0.96,
+            "overlap": 0.14112769485903814,
+            "quality": 0.9309701492537313,
+            "combined_score": 0.37808043117744605
+          },
+          {
+            "text": "tiles",
+            "confidence": 0.96,
+            "overlap": 0.17142857142857143,
+            "quality": 0.9825892857142857,
+            "combined_score": 0.4147767857142857
+          },
+          {
+            "text": "and",
+            "confidence": 0.96,
+            "overlap": 0.34285714285714286,
+            "quality": 0.9821428571428572,
+            "combined_score": 0.5346428571428572
+          },
+          {
+            "text": "4",
+            "confidence": 0.96,
+            "overlap": 0.9583333333333334,
+            "quality": 0.967391304347826,
+            "combined_score": 0.9610507246376812
+          },
+          {
+            "text": "bulbs",
+            "confidence": 0.96,
+            "overlap": 0.22641509433962265,
+            "quality": 0.9720350404312669,
+            "combined_score": 0.45010107816711586
+          },
+          {
+            "text": "material",
+            "confidence": 0.96,
+            "overlap": 0.1418711656441718,
+            "quality": 0.8917342243645925,
+            "combined_score": 0.366830083260298
+          },
+          {
+            "text": "1",
+            "confidence": 0.85,
+            "overlap": 0.9058823529411765,
+            "quality": 0.9718614718614719,
+            "combined_score": 0.925676088617265
+          },
+          {
+            "text": "162.00",
+            "confidence": 0.96,
+            "overlap": 0.18604651162790697,
+            "quality": 0.9712070874861573,
+            "combined_score": 0.42159468438538206
+          },
+          {
+            "text": "162.00T",
+            "confidence": 0.9,
+            "overlap": 0.17989417989417988,
+            "quality": 0.9638447971781305,
+            "combined_score": 0.41507936507936505
+          },
+          {
+            "text": "ceiling",
+            "confidence": 0.96,
+            "overlap": 0.1296849087893864,
+            "quality": 0.9305555555555556,
+            "combined_score": 0.3699461028192371
+          },
+          {
+            "text": "tiles,",
+            "confidence": 0.96,
+            "overlap": 0.12454592631032693,
+            "quality": 0.9300077841203944,
+            "combined_score": 0.3661844836533472
+          },
+          {
+            "text": "bulbs",
+            "confidence": 0.96,
+            "overlap": 0.22641509433962265,
+            "quality": 0.9720350404312669,
+            "combined_score": 0.45010107816711586
+          },
+          {
+            "text": "labor",
+            "confidence": 0.96,
+            "overlap": 0.24271844660194175,
+            "quality": 0.9563106796116505,
+            "combined_score": 0.45679611650485435
+          },
+          {
+            "text": "2",
+            "confidence": 0.96,
+            "overlap": 0.9565217391304348,
+            "quality": 0.9772727272727273,
+            "combined_score": 0.9627470355731225
+          },
+          {
+            "text": "40.00",
+            "confidence": 0.94,
+            "overlap": 0.22018348623853212,
+            "quality": 0.9747706422018348,
+            "combined_score": 0.44655963302752294
+          },
+          {
+            "text": "80.00T",
+            "confidence": 0.91,
+            "overlap": 0.20816326530612245,
+            "quality": 0.9813775510204081,
+            "combined_score": 0.4401275510204081
+          },
+          {
+            "text": "labor",
+            "confidence": 0.96,
+            "overlap": 0.23529411764705882,
+            "quality": 0.967436974789916,
+            "combined_score": 0.4549369747899159
+          },
+          {
+            "text": "fleet",
+            "confidence": 0.96,
+            "overlap": 0.31714377613380507,
+            "quality": 0.984577922077922,
+            "combined_score": 0.5173740199170401
+          },
+          {
+            "text": "pride",
+            "confidence": 0.96,
+            "overlap": 0.1830065359477124,
+            "quality": 0.9256535947712419,
+            "combined_score": 0.40580065359477124
+          },
+          {
+            "text": "SUBTOTAL",
+            "confidence": 0.96,
+            "overlap": 0.2548262548262548,
+            "quality": 0.9567015995587425,
+            "combined_score": 0.46538885824600107
+          },
+          {
+            "text": "242.00",
+            "confidence": 0.95,
+            "overlap": 0.1791044776119403,
+            "quality": 0.9704157782515992,
+            "combined_score": 0.4164978678038379
+          },
+          {
+            "text": "TAX",
+            "confidence": 0.96,
+            "overlap": 0.696078431372549,
+            "quality": 0.9381916132789749,
+            "combined_score": 0.7687123859444767
+          },
+          {
+            "text": "(8%)",
+            "confidence": 0.95,
+            "overlap": 0.2484700122399021,
+            "quality": 0.9651162790697675,
+            "combined_score": 0.46346389228886165
+          },
+          {
+            "text": "19.36",
+            "confidence": 0.89,
+            "overlap": 0.20827698133621855,
+            "quality": 0.954421768707483,
+            "combined_score": 0.4321204175475979
+          },
+          {
+            "text": "TOTAL",
+            "confidence": 0.96,
+            "overlap": 0.39333917616126207,
+            "quality": 0.9373356704645048,
+            "combined_score": 0.5565381244522348
+          },
+          {
+            "text": "261.36",
+            "confidence": 0.93,
+            "overlap": 0.1708041587099512,
+            "quality": 0.9525586353944563,
+            "combined_score": 0.4053305017153027
+          },
+          {
+            "text": "BALANCE",
+            "confidence": 0.96,
+            "overlap": 0.27282674772036475,
+            "quality": 0.9623100303951369,
+            "combined_score": 0.4796717325227964
+          },
+          {
+            "text": "DUE",
+            "confidence": 0.96,
+            "overlap": 0.6411428571428571,
+            "quality": 0.9563919627256843,
+            "combined_score": 0.7357175888177052
+          },
+          {
+            "text": "$261.36",
+            "confidence": 0.55,
+            "overlap": 0.14018691588785046,
+            "quality": 0.8497446668313977,
+            "combined_score": 0.35305424117091466
+          }
+        ]
+      }
+    },
+    "bbox_quality_scores": {},
+    "visual_consistency": {
+      "pairwise_consistency": {},
+      "average_consistency": 0.0
+    },
+    "text_detection_validation": {},
+    "recommendations": {
+      "engine_rankings": {
+        "tesseract": 1
+      },
+      "confidence_adjustments": {
+        "tesseract": 0.8
+      },
+      "quality_warnings": [],
+      "improvement_suggestions": [
+        "Low inter-engine consistency detected. Consider adjusting OCR parameters."
+      ]
+    }
+  },
+  "text_line_validation": {
+    "cv_detected_lines": 0,
+    "line_contours": [],
+    "engine_line_scores": {}
+  },
+  "consensus_enhancement": {
+    "enhanced_weights": {
+      "tesseract": 1.0
+    },
+    "weight_adjustments": {
+      "tesseract": 0.0
+    }
+  },
+  "visual_confidence_scores": {
+    "visual_confidence": 0.5927689696851048,
+    "quality_contribution": 0.7758965656170161,
+    "layout_contribution": 0.9,
+    "consistency_contribution": 0.0
+  },
+  "cross_engine_validation": {
+    "bbox_consistency_scores": {},
+    "average_consistency": 0.0
+  }
 }

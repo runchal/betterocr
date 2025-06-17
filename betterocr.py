@@ -24,15 +24,15 @@ logger = logging.getLogger(__name__)
 
 class BetterOCR:
     """Main OCR processing class"""
-    
+
     def __init__(self, debug=False):
         self.debug = debug
         if debug:
             logger.setLevel(logging.DEBUG)
-        
+
         # Initialize components
         self.engines = self._init_engines()
-        
+
         # Initialize vision validator
         try:
             from vision.layout_analyzer import LayoutAnalyzer
@@ -41,7 +41,7 @@ class BetterOCR:
         except Exception as e:
             logger.warning(f"Vision validation not available: {e}")
             self.vision_validator = None
-        
+
         # Initialize consensus builder
         try:
             from consensus.text_merger import TextMerger
@@ -50,11 +50,11 @@ class BetterOCR:
         except Exception as e:
             logger.warning(f"Consensus builder not available: {e}")
             self.consensus_builder = None
-        
+
     def _init_engines(self):
         """Initialize available OCR engines"""
         engines = {}
-        
+
         # Try to import each engine
         try:
             from engines.tesseract_engine import TesseractEngine
@@ -62,27 +62,28 @@ class BetterOCR:
             logger.info("Tesseract engine loaded")
         except Exception as e:
             logger.warning(f"Tesseract not available: {e}")
-            
+
         try:
             from engines.easyocr_engine import EasyOCREngine
             engines['easyocr'] = EasyOCREngine()
             logger.info("EasyOCR engine loaded")
         except Exception as e:
             logger.warning(f"EasyOCR not available: {e}")
-            
+
         try:
             from engines.paddle_engine import PaddleEngine
             engines['paddle'] = PaddleEngine()
             logger.info("PaddleOCR engine loaded")
         except Exception as e:
             logger.warning(f"PaddleOCR not available: {e}")
-            
+
         return engines
-    
+
     def process_document(self, file_path):
         """Process a single document through all engines"""
+        file_path = Path(file_path)
         logger.info(f"Processing: {file_path}")
-        
+
         results = {
             'file': str(file_path),
             'engines': {},
@@ -90,7 +91,7 @@ class BetterOCR:
             'vision_validation': None,
             'final_output': None
         }
-        
+
         # Run each OCR engine
         for engine_name, engine in self.engines.items():
             try:
@@ -103,13 +104,13 @@ class BetterOCR:
                     'error': str(e),
                     'status': 'failed'
                 }
-        
+
         # Build consensus
         if self.consensus_builder:
             results['consensus'] = self.consensus_builder.merge_results(results['engines'])
         else:
             results['consensus'] = self._build_consensus(results['engines'])
-        
+
         # Apply vision validation
         if self.vision_validator and file_path.suffix.lower() in ['.png', '.jpg', '.jpeg', '.tiff', '.bmp']:
             try:
@@ -120,12 +121,12 @@ class BetterOCR:
                 results['vision_validation'] = {'status': 'error', 'error': str(e)}
         else:
             results['vision_validation'] = {'status': 'not_applicable'}
-        
+
         # Generate final output
         results['final_output'] = self._generate_final_output(results)
-        
+
         return results
-    
+
     def _build_consensus(self, engine_results):
         """Build consensus from multiple engine results"""
         # For now, just organize the results
@@ -134,7 +135,7 @@ class BetterOCR:
             'method': 'all_results',
             'note': 'Currently showing all engine results with confidence scores'
         }
-    
+
     def _generate_final_output(self, results):
         """Generate the final structured output"""
         output = {
@@ -142,7 +143,7 @@ class BetterOCR:
                 'file': results['file'],
                 'processing_complete': True,
                 'engines_used': list(results['engines'].keys()),
-                'successful_engines': [name for name, r in results['engines'].items() 
+                'successful_engines': [name for name, r in results['engines'].items()
                                      if r.get('status') == 'success']
             },
             'consensus': {
@@ -160,7 +161,7 @@ class BetterOCR:
             },
             'vision_analysis': {}
         }
-        
+
         # Add consensus information if available
         if results.get('consensus') and results['consensus'].get('status') == 'success':
             consensus = results['consensus']
@@ -170,11 +171,11 @@ class BetterOCR:
                 'method': consensus.get('consensus_method', 'unknown'),
                 'agreement_score': consensus.get('agreement_score', 0.0)
             }
-            
+
             # Add variations from consensus
             if 'variations' in consensus:
                 output['text_variations'] = {
-                    engine: var['text'] 
+                    engine: var['text']
                     for engine, var in consensus['variations'].items()
                 }
         else:
@@ -183,7 +184,7 @@ class BetterOCR:
                 if 'error' not in engine_result:
                     output['text_variations'][engine_name] = engine_result.get('text', '')
                     output['confidence_scores'][engine_name] = engine_result.get('confidence', 0.0)
-        
+
         # Add vision analysis results
         if results.get('vision_validation') and 'error' not in results['vision_validation']:
             vision = results['vision_validation']
@@ -194,7 +195,7 @@ class BetterOCR:
                 'tables': vision.get('tables', []),
                 'text_blocks': vision.get('text_blocks', [])
             }
-        
+
         return output
 
 
@@ -204,40 +205,40 @@ def main():
     parser.add_argument('--output', '-o', help='Output JSON file (default: input_name.json)')
     parser.add_argument('--debug', action='store_true', help='Enable debug logging')
     parser.add_argument('--engines', help='Comma-separated list of engines to use')
-    
+
     args = parser.parse_args()
-    
+
     # Validate input file
     input_path = Path(args.input)
     if not input_path.exists():
         logger.error(f"Input file not found: {input_path}")
         sys.exit(1)
-    
+
     # Initialize BetterOCR
     ocr = BetterOCR(debug=args.debug)
-    
+
     # Process document
     try:
         results = ocr.process_document(input_path)
-        
+
         # Determine output path
         if args.output:
             output_path = Path(args.output)
         else:
             output_path = input_path.with_suffix('.json')
-        
+
         # Save results
         with open(output_path, 'w') as f:
             json.dump(results, f, indent=2)
-        
+
         logger.info(f"Results saved to: {output_path}")
-        
+
         # Print summary
         if results['final_output']:
             print("\n=== OCR Results Summary ===")
             print(f"Engines used: {list(results['engines'].keys())}")
             print(f"Confidence scores: {results['final_output']['confidence_scores']}")
-            
+
     except Exception as e:
         logger.error(f"Processing failed: {e}")
         sys.exit(1)
